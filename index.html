@@ -1,0 +1,64 @@
+<title>Swipe</title>
+<div class="shadow"></div>
+<main>
+    <section>
+        <div class="white-bkg"></div>
+        <header>
+            <img src="/js-swipe/img/photo1.jpg" alt="Logo">
+        </header>
+        <div class="cards">
+            <article>
+                <img src="./img/photo2.jpg" alt="homero esta triste">
+                <h2>La vida es triste</h2>
+            </article>
+            <article>
+                <img src="./img/photo3.jpg" alt="homero esta triste">
+                <h2>Toda va a salir bien</h2>
+            </article>
+            <span>
+                No hay mas fotos
+            </span>
+        </div>
+        <footer>
+            <button>Like</button>
+            <button>Dislike</button>
+        </footer>
+    </section>
+</main>
+
+<style>
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+        user-select: none;
+        background: #e5e5e5;
+    }
+
+    .white-bkg {
+        position: absolute;
+        background: #f6f6f6;
+        inset: 0;
+        z-index: -10;
+    }
+    .shadow {
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+    }
+    main {
+        background: url(./img/photo1.jpg) no-repeat;
+        background-size: contain;
+        width: 320px;
+        height: 640px;
+        display: flex;
+        position: relative;
+    }	
+</style>
